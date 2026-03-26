@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tahj | Front-End Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Mono:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- ── Nav ── -->
+    <nav>
+      <a href="#about" class="nav-logo">tahj<span>.</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- ── About ── -->
+    <section id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text fade-up">
+            <p class="section-label">About me</p>
+            <h2>Building things for the web.</h2>
+            <p>
+              Hey, I'm Tyrone, A.K.A <strong>Tahj</strong> — a self-taught
+              front-end developer based in Spotsylvania, VA. I'm transitioning
+              into web development after a background in customer service and
+              technical support, bringing a people-first mindset to every
+              project I build.
+            </p>
+            <p>
+              I enjoy turning ideas into real, working interfaces — writing
+              clean HTML, thoughtful CSS, and JavaScript that makes things
+              actually
+              <em>do</em> stuff. Currently leveling up through
+              <strong>The Odin Project</strong>, <strong>freeCodeCamp</strong>,
+              and <strong>Codecademy</strong>.
+            </p>
+            <div class="btn-group">
+              <a href="#projects" class="btn btn-primary">See my work</a>
+              <a href="#contact" class="btn btn-outline">Get in touch</a>
+            </div>
+          </div>
+
+          <div class="about-image fade-up">
+            <!-- Replace src with your actual photo path, e.g. "assets/profile.jpg" -->
+            <img
+              src="./assets/images/profile.jpg"
+              alt="Photo of Tahj"
+              class="profile-photo"
+            />
+            <div class="skills-list">
+              <span class="skill-pill">HTML</span>
+              <span class="skill-pill">CSS</span>
+              <span class="skill-pill">JavaScript</span>
+              <span class="skill-pill">PostgreSQL</span>
+              <span class="skill-pill">Git</span>
+              <span class="skill-pill">Responsive Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Projects ── -->
+    <section id="projects">
+      <div class="container">
+        <p class="section-label fade-up">Work</p>
+        <h2 class="fade-up">Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card fade-up">
+            <h3>Ironclad Roasters</h3>
+            <p>
+              A responsive landing page for a fictional coffee shop. Built with
+              a focus on CSS layout, media queries, and a sliding carousel menu.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank">Live Demo →</a>
+              <a href="#" target="_blank">GitHub</a>
+            </div>
+          </div>
+
+          <div class="project-card fade-up">
+            <h3>Eden's Passion</h3>
+            <p>
+              Photography studio landing page featuring a full-viewport hero,
+              CSS overlay effects, and Font Awesome icon integration.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank">Live Demo →</a>
+              <a href="#" target="_blank">GitHub</a>
+            </div>
+          </div>
+
+          <div class="project-card fade-up">
+            <h3>Credit Card Checker</h3>
+            <p>
+              JavaScript implementation of the Luhn algorithm to validate credit
+              card numbers — built as part of a Codecademy JS project.
+            </p>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank">GitHub</a>
+            </div>
+          </div>
+
+          <div class="project-card fade-up">
+            <h3>More coming soon</h3>
+            <p>
+              Always building. Check back for new projects as I continue
+              leveling up my skills.
+            </p>
+            <div class="project-tags">
+              <span class="tag">In progress</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/yourusername" target="_blank"
+                >GitHub Profile</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Skills ── -->
+    <section id="skills">
+      <div class="container">
+        <p class="section-label fade-up">What I work with</p>
+        <h2 class="fade-up">Skills</h2>
+        <div class="skills-section-grid">
+          <div class="skill-category fade-up">
+            <h4>Frontend</h4>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript (ES6+)</li>
+              <li>Responsive Design</li>
+              <li>Flexbox &amp; Grid</li>
+            </ul>
+          </div>
+
+          <div class="skill-category fade-up">
+            <h4>Tools</h4>
+            <ul>
+              <li>Git &amp; GitHub</li>
+              <li>VS Code</li>
+              <li>Chrome DevTools</li>
+              <li>Google Fonts</li>
+              <li>Font Awesome</li>
+            </ul>
+          </div>
+
+          <div class="skill-category fade-up">
+            <h4>Learning</h4>
+            <ul>
+              <li>PostgreSQL</li>
+              <li>React (next up)</li>
+              <li>The Odin Project</li>
+              <li>freeCodeCamp</li>
+              <li>Codecademy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Contact ── -->
+    <section id="contact">
+      <div class="container">
+        <p class="section-label fade-up">Get in touch</p>
+        <h2 class="fade-up">Let's connect.</h2>
+        <div class="contact-wrapper fade-up">
+          <p>
+            I'm open to junior front-end roles, freelance projects, and
+            internship opportunities. Feel free to reach out — I'd love to talk.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:tahjstudio@gmail.com" class="contact-link">
+              <span class="label">Email</span>
+              tahjstudio@gmail.com
+            </a>
+            <a
+              href="https://github.com/THen25"
+              target="_blank"
+              class="contact-link"
+            >
+              <span class="label">GitHub</span>
+              github.com/THen25
+            </a>
+            <a
+              href="www.linkedin.com/in/tyrone-henderson-b92514a8"
+              target="_blank"
+              class="contact-link"
+            >
+              <span class="label">LinkedIn</span>
+              linkedin.com/in/tyrone-henderson-b92514a8
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Footer ── -->
+    <footer>
+      <p>Designed &amp; built by Tahj &nbsp;·&nbsp; 2026</p>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
