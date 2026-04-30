@@ -1,6 +1,6 @@
 # Tahj's Portfolio 🖥️
 
-My personal portfolio site — designed and built from scratch to showcase my front-end projects and skills as a self-taught developer.
+My personal portfolio site — designed to showcase my front-end projects and skills as a self-taught developer.
 
 ## Live Demo
 
