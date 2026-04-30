@@ -14,6 +14,29 @@ links.forEach(function (link) {
   });
 });
 
+// Contact form submission
+const contactForm = document.getElementById("contact-form");
+const formSuccess = document.getElementById("form-success");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const data = new URLSearchParams(new FormData(contactForm));
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: data.toString(),
+    })
+      .then(function () {
+        contactForm.style.display = "none";
+        formSuccess.style.display = "block";
+      })
+      .catch(function () {
+        contactForm.submit();
+      });
+  });
+}
+
 // Fade-up scroll animation using IntersectionObserver
 const fadeElements = document.querySelectorAll(".fade-up");
 

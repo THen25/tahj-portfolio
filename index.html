@@ -38,7 +38,7 @@
             <p class="section-label">About me</p>
             <h2>Who I am.</h2>
             <p>
-              I'm Tyrone — most people know me as <strong>Tahj</strong>. I'm a
+              I'm Tyrone — but you can call me <strong>Tahj</strong>. I'm a
               front-end developer. I build clean, responsive websites and
               interfaces that look good, work on every screen, and don't fall
               apart.
@@ -80,6 +80,37 @@
         <p class="section-label fade-up">Work</p>
         <h2 class="fade-up">Projects</h2>
         <div class="projects-grid">
+          <div class="project-card fade-up">
+            <h3>Kingdom Sweetz N Treatz</h3>
+            <p>
+              A full-stack ready business website built for a real client — a
+              Christian-owned cottage bakery in Northern Virginia. Features
+              custom order, quote, and contact forms with EmailJS delivery,
+              real-time booking availability via Google Calendar API, a dynamic
+              Instagram feed that auto-updates from the client's posts, and
+              client review submission. Deployed to Netlify with a custom
+              domain.
+            </p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Vite</span>
+              <span class="tag">EmailJS</span>
+              <span class="tag">Google Calendar API</span>
+              <span class="tag">CSS</span>
+              <span class="tag">Netlify</span>
+            </div>
+            <div class="project-links">
+              <a href="https://kingdomsweetzntreatz.com" target="_blank"
+                >Live Site →</a
+              >
+              <a
+                href="https://github.com/THen25/kingdom-sweetz-n-treatz"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+
           <div class="project-card fade-up">
             <h3>Ironclad Roasters</h3>
             <p>
@@ -165,19 +196,19 @@
               <li>CSS3</li>
               <li>JavaScript (ES6+)</li>
               <li>React</li>
+              <li>Vite</li>
               <li>Responsive Design</li>
-              <li>Flexbox &amp; Grid</li>
             </ul>
           </div>
 
           <div class="skill-category fade-up">
-            <h4>Tools</h4>
+            <h4>Tools &amp; Deployment</h4>
             <ul>
               <li>Git &amp; GitHub</li>
-              <li>VS Code</li>
+              <li>Netlify</li>
+              <li>EmailJS</li>
+              <li>Google Calendar API</li>
               <li>Chrome DevTools</li>
-              <li>Google Fonts</li>
-              <li>Font Awesome</li>
             </ul>
           </div>
         </div>
@@ -189,24 +220,83 @@
       <div class="container">
         <p class="section-label fade-up">Get in touch</p>
         <h2 class="fade-up">Let's connect.</h2>
-        <div class="contact-wrapper fade-up">
-          <p>
-            I'm open to junior front-end roles, freelance projects, and
-            internship opportunities. Feel free to reach out — I'd love to talk.
-          </p>
-          <div class="contact-links">
-            <a href="mailto:tahjstudio@gmail.com" class="contact-link">
-              <span class="label">Email</span>
-              tahjstudio@gmail.com
-            </a>
-            <a
-              href="https://github.com/THen25"
-              target="_blank"
-              class="contact-link"
+        <div class="contact-layout fade-up">
+          <div class="contact-info">
+            <p>
+              I'm open to junior front-end roles, freelance projects, and
+              internship opportunities. Feel free to reach out — I'd love to
+              talk.
+            </p>
+            <div class="contact-links">
+              <a href="mailto:tahjstudio@gmail.com" class="contact-link">
+                <span class="label">Email</span>
+                tahjstudio@gmail.com
+              </a>
+              <a
+                href="https://github.com/THen25"
+                target="_blank"
+                class="contact-link"
+              >
+                <span class="label">GitHub</span>
+                github.com/THen25
+              </a>
+              <a
+                href="https://www.linkedin.com/in/tahj1999"
+                target="_blank"
+                class="contact-link"
+              >
+                <span class="label">LinkedIn</span>
+                linkedin.com/in/tahj1999
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper">
+            <form
+              class="contact-form"
+              id="contact-form"
+              name="contact"
+              method="POST"
+              data-netlify="true"
             >
-              <span class="label">GitHub</span>
-              github.com/THen25
-            </a>
+              <input type="hidden" name="form-name" value="contact" />
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="your@email.com"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="What's on your mind?"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary form-submit">
+                Send Message
+              </button>
+            </form>
+            <div class="form-success" id="form-success">
+              <p>Message sent. I'll get back to you soon.</p>
+            </div>
           </div>
         </div>
       </div>
